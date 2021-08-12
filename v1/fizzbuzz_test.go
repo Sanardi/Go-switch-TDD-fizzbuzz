@@ -7,7 +7,7 @@ import (
 
 func TestFizzBuzzLength(t *testing.T) {
 
-	t.Run("Creates array of any size passed", func(t *testing.T) {
+	t.Run("Creates string array of any size passed", func(t *testing.T) {
 
 		test9 := FizzBuzz(9)
 
