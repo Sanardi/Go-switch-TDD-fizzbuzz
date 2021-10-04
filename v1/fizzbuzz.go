@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
+	"strconv"
 	"time"
 )
 
@@ -32,7 +34,19 @@ func FizzBuzz(size int) []string {
 
 func main() {
 	start := time.Now()
-	FizzBuzz(1000)
+
+	s := os.Args[1]
+	//flag.Parse()
+	size, err := strconv.Atoi(s)
+	if err != nil {
+		// handle error
+		fmt.Println(err)
+		os.Exit(2)
+	}
+	fmt.Println(size)
+
+	fmt.Printf("size: %d\n", size)
+	FizzBuzz(size)
 	elapsed := time.Since(start)
 	log.Printf("Binomial took %s", elapsed)
 }

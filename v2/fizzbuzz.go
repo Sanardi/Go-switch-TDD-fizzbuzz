@@ -7,6 +7,7 @@ import (
 	"time"
 )
 
+// Buhahaha, this actually made it slower! But keeping this for reference to remember what NOT to do :-)
 // Fizzbuzz prints and return an array of any size you pass to it/
 //when the integer is divisible by 3 it prints "Fizz"
 //When the int is divisible by 5 it prints "Buzz"
